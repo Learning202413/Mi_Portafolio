@@ -407,13 +407,14 @@
 		}
 
 		@keyframes rotating {
-			from {
-				transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(0);
-			}
-
-			to {
-				transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(1turn);
-			}
+		  from {
+		    transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+		      rotateY(0);
+		  }
+		  to {
+		    transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+		      rotateY(-1turn); /* Cambiar 1turn por -1turn para giro antihorario */
+		  }
 		}
 
 		.card {
